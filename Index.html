@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HAMMAD - Expert App Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#0A0A1A;color:#fff}
+nav{position:fixed;top:0;width:100%;background:rgba(10,10,26,0.95);padding:15px 20px;display:flex;justify-content:space-between;align-items:center;z-index:1000;border-bottom:1px solid #00FFD1}
+.logo{color:#00FFD1;font-size:24px;font-weight:900}
+.nav-links a{color:#fff;text-decoration:none;margin-left:15px;font-size:14px}
+.nav-links a:hover{color:#00FFD1}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:100px 20px 50px;background:linear-gradient(135deg,#0A0A1A,#1A1A3E)}
+.hero h1{font-size:48px;font-weight:900;color:#fff;margin-bottom:10px}
+.hero h1 span{color:#00FFD1}
+.hero p{font-size:18px;color:#aaa;margin-bottom:10px}
+.hero .subtitle{color:#FFD700;font-size:16px;margin-bottom:30px}
+.btn{display:inline-block;padding:12px 30px;border-radius:50px;text-decoration:none;font-weight:600;margin:8px;transition:all 0.3s}
+.btn-primary{background:#00FFD1;color:#0A0A1A}
+.btn-secondary{border:2px solid #00FFD1;color:#00FFD1}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,255,209,0.3)}
+.section{padding:80px 20px}
+.section-title{text-align:center;font-size:32px;font-weight:700;margin-bottom:50px}
+.section-title span{color:#00FFD1}
+.about{background:#0F0F2A}
+.about-content{max-width:800px;margin:0 auto;text-align:center}
+.about-content p{color:#aaa;font-size:16px;line-height:1.8;margin-bottom:30px}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:500px;margin:0 auto}
+.stat-box{background:#1A1A3E;padding:20px;border-radius:15px;text-align:center;border:1px solid #00FFD1}
+.stat-box h3{color:#00FFD1;font-size:28px;font-weight:900}
+.stat-box p{color:#aaa;font-size:13px}
+.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:700px;margin:0 auto}
+.skill-item{background:#1A1A3E;padding:20px;border-radius:15px;border-left:3px solid #00FFD1}
+.skill-name{display:flex;justify-content:space-between;margin-bottom:10px}
+.skill-name span:first-child{color:#fff;font-weight:600}
+.skill-name span:last-child{color:#00FFD1}
+.skill-bar{background:#0A0A1A;border-radius:10px;height:8px}
+.skill-fill{height:8px;border-radius:10px;background:linear-gradient(90deg,#00FFD1,#FFD700)}
+.services{background:#0F0F2A}
+.services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:800px;margin:0 auto}
+.service-card{background:#1A1A3E;padding:25px;border-radius:15px;text-align:center;border:1px solid #1A1A3E;transition:all 0.3s}
+.service-card:hover{border-color:#00FFD1;transform:translateY(-5px)}
+.service-icon{font-size:40px;margin-bottom:15px}
+.service-card h3{color:#00FFD1;font-size:16px;margin-bottom:10px}
+.service-card p{color:#aaa;font-size:13px;line-height:1.6}
+.projects-grid{display:grid;gap:20px;max-width:800px;margin:0 auto}
+.project-card{background:#1A1A3E;padding:25px;border-radius:15px;border:1px solid #1A1A3E;transition:all 0.3s}
+.project-card:hover{border-color:#FFD700}
+.project-card h3{color:#FFD700;font-size:18px;margin-bottom:10px}
+.project-card p{color:#aaa;font-size:14px;margin-bottom:15px;line-height:1.6}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:15px}
+.tag{background:#0A0A1A;color:#00FFD1;padding:4px 12px;border-radius:20px;font-size:12px}
+.contact{background:#0F0F2A}
+.contact-form{max-width:600px;margin:0 auto}
+.form-group{margin-bottom:20px}
+.form-group input,.form-group textarea{width:100%;background:#1A1A3E;border:1px solid #333;border-radius:10px;padding:15px;color:#fff;font-family:'Poppins',sans-serif;font-size:14px}
+.form-group input:focus,.form-group textarea:focus{outline:none;border-color:#00FFD1}
+.form-group textarea{height:120px;resize:none}
+.contact-info{text-align:center;margin-top:40px}
+.contact-info p{color:#aaa;margin:8px 0}
+.contact-info span{color:#00FFD1}
+footer{background:#05050F;text-align:center;padding:30px 20px;border-top:1px solid #1A1A3E}
+footer p{color:#aaa;font-size:14px}
+footer span{color:#00FFD1}
+@media(max-width:600px){
+.hero h1{font-size:32px}
+.services-grid{grid-template-columns:1fr}
+.skills-grid{grid-template-columns:1fr}
+.stats{grid-template-columns:repeat(2,1fr)}
+.nav-links{display:none}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">HAMMAD</div>
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#services">Services</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+<div>
+<p>👋 Hello, I'm</p>
+<h1>HAMMAD <span>TECH</span></h1>
+<p class="subtitle">⚡ Expert App Developer from Pakistan 🇵🇰</p>
+<p style="color:#aaa;max-width:500px;margin:0 auto 30px">Building powerful web & mobile apps using latest AI tools and technologies. Turning ideas into reality!</p>
+<a href="#contact" class="btn btn-primary">💼 Hire Me</a>
+<a href="#projects" class="btn btn-secondary">🚀 My Work</a>
+</div>
+</section>
+
+<section class="about section" id="about">
+<h2 class="section-title">About <span>Me</span></h2>
+<div class="about-content">
+<p>I am Hammad, a young expert app developer from Mian Channu, Pakistan. I build powerful web and mobile applications using latest AI tools and technologies. I help businesses grow with smart digital solutions worldwide.</p>
+<div class="stats">
+<div class="stat-box"><h3>10+</h3><p>Projects Done</p></div>
+<div class="stat-box"><h3>5+</h3><p>Happy Clients</p></div>
+<div class="stat-box"><h3>100%</h3><p>Satisfaction</p></div>
+<div class="stat-box"><h3>24/7</h3><p>Support</p></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="skills">
+<h2 class="section-title">My <span>Skills</span></h2>
+<div class="skills-grid">
+<div class="skill-item">
+<div class="skill-name"><span>React.js</span><span>85%</span></div>
+<div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+</div>
+<div class="skill-item">
+<div class="skill-name"><span>Node.js</span><span>80%</span></div>
+<div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+</div>
+<div class="skill-item">
+<div class="skill-name"><span>MongoDB</span><span>75%</span></div>
+<div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+</div>
+<div class="skill-item">
+<div class="skill-name"><span>Mobile Apps</span><span>85%</span></div>
+<div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+</div>
+<div class="skill-item">
+<div class="skill-name"><span>AI Development</span><span>90%</span></div>
+<div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+</div>
+<div class="skill-item">
+<div class="skill-name"><span>UI/UX Design</span><span>80%</span></div>
+<div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+</div>
+</div>
+</section>
+
+<section class="services section" id="services">
+<h2 class="section-title">My <span>Services</span></h2>
+<div class="services-grid">
+<div class="service-card">
+<div class="service-icon">🌐</div>
+<h3>Web Development</h3>
+<p>Professional websites and web apps built with modern technologies</p>
+</div>
+<div class="service-card">
+<div class="service-icon">📱</div>
+<h3>Mobile App Development</h3>
+<p>iOS and Android apps built with React Native and AI tools</p>
+</div>
+<div class="service-card">
+<div class="service-icon">🤖</div>
+<h3>AI-Powered Solutions</h3>
+<p>Smart applications integrated with latest AI technologies</p>
+</div>
+<div class="service-card">
+<div class="service-icon">📝</div>
+<h3>Content Writing</h3>
+<p>SEO blogs, Amazon listings, business plans and more</p>
+</div>
+<div class="service-card">
+<div class="service-icon">🛒</div>
+<h3>Amazon Listing Writing</h3>
+<p>High-converting Amazon product listings that rank and sell</p>
+</div>
+<div class="service-card">
+<div class="service-icon">🎨</div>
+<h3>UI/UX Design</h3>
+<p>Beautiful and user-friendly designs using Canva and Figma</p>
+</div>
+</div>
+</section>
+
+<section class="section" id="projects">
+<h2 class="section-title">My <span>Projects</span></h2>
+<div class="projects-grid">
+<div class="project-card">
+<h3>📱 HisaabPro</h3>
+<p>Pakistan's #1 Bill & Budget Manager App. Manage utility bills, set reminders, pay with JazzCash & Easypaisa, track budget — all in one app!</p>
+<div class="tags">
+<span class="tag">React.js</span>
+<span class="tag">Node.js</span>
+<span class="tag">MongoDB</span>
+<span class="tag">AI</span>
+</div>
+<a href="#" class="btn btn-primary" style="font-size:13px;padding:8px 20px">Live Demo</a>
+</div>
+<div class="project-card">
+<h3>✍️ Amazon Listing Service</h3>
+<p>Professional Amazon product listing writing service. SEO optimized listings that rank higher and convert browsers into buyers!</p>
+<div class="tags">
+<span class="tag">Content</span>
+<span class="tag">SEO</span>
+<span class="tag">Amazon</span>
+</div>
+<a href="https://fiverr.com" class="btn btn-primary" style="font-size:13px;padding:8px 20px">View on Fiverr</a>
+</div>
+</div>
+</section>
+
+<section class="contact section" id="contact">
+<h2 class="section-title">Contact <span>Me</span></h2>
+<div class="contact-form">
+<div class="form-group">
+<input type="text" placeholder="Your Name">
+</div>
+<div class="form-group">
+<input type="email" placeholder="Your Email">
+</div>
+<div class="form-group">
+<textarea placeholder="Your Message"></textarea>
+</div>
+<a href="mailto:maharmoon42@gmail.com" class="btn btn-primary" style="width:100%;text-align:center;display:block">Send Message 🚀</a>
+</div>
+<div class="contact-info">
+<p>📧 <span>maharmoon42@gmail.com</span></p>
+<p>📱 <span>03274107727</span></p>
+<p>📍 <span>Mian Channu, Pakistan 🇵🇰</span></p>
+</div>
+</section>
+
+<footer>
+<p>© 2024 <span>HAMMAD TECH</span> — Built with ❤️ in Pakistan 🇵🇰</p>
+<p style="margin-top:8px">Expert App Developer | Serving Worldwide 🌍</p>
+</footer>
+
+</body>
+</html>
