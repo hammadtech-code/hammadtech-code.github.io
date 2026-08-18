@@ -3,178 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HammadTech | Professional Career & Digital Solutions</title>
-    <!-- Tailwind CSS CDN -->
+    <title>HammadTech | Elite Digital Agency & Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #030712; color: #f8fafc; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+    </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans selection:bg-indigo-500 selection:text-white">
+<body>
 
-    <!-- Header / Navbar -->
-    <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
-        <div class="flex justify-between items-center px-6 md:px-12 py-4 max-w-7xl mx-auto">
-            <div class="flex items-center space-x-2">
-                <span class="text-xl font-black tracking-wider text-indigo-400">HammadTech</span>
-                <span class="bg-indigo-500/10 text-indigo-400 text-xs px-2.5 py-0.5 rounded-full border border-indigo-500/20 font-medium">Agency Pro</span>
-            </div>
-            <nav class="hidden md:flex space-x-8 text-sm font-medium">
-                <a href="#services" class="hover:text-indigo-400 transition">Services</a>
-                <a href="#projects" class="hover:text-indigo-400 transition">Live Projects</a>
-                <a href="#about" class="hover:text-indigo-400 transition">About</a>
-                <a href="#contact" class="bg-indigo-600 px-4 py-2 rounded-lg hover:bg-indigo-500 transition shadow-md shadow-indigo-600/20">Get in Touch</a>
-            </nav>
+    <!-- Hero Section -->
+    <header class="max-w-6xl mx-auto px-6 pt-20 pb-12 text-center">
+        <div class="animate__animated animate__fadeInDown">
+            <span class="text-indigo-400 font-bold tracking-widest uppercase text-sm">HammadTech | Digital Solutions Agency</span>
+            <h1 class="text-5xl md:text-7xl font-black mt-4 mb-6">Building the Future <br> <span class="text-indigo-500">of Digital Innovation</span></h1>
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto mb-10">We deliver enterprise-grade AI development, career branding, and scalable business solutions for global clients.</p>
+            <a href="#contact" class="bg-indigo-600 hover:bg-indigo-500 text-white px-10 py-4 rounded-full font-bold transition transform hover:scale-105">Get Started Today</a>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="max-w-7xl mx-auto px-6 md:px-12 py-24 flex flex-col items-start justify-center min-h-[75vh]">
-        <div class="inline-flex items-center space-x-2 bg-indigo-950/60 border border-indigo-500/30 px-3.5 py-1.5 rounded-full mb-6">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span class="text-indigo-300 text-xs font-semibold tracking-wide uppercase">Available for Global Projects</span>
-        </div>
-        <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
-            Helping You Stand Out. <br>
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-cyan-400 to-teal-300">Get Hired. Grow Globally.</span>
-        </h1>
-        <p class="text-slate-400 max-w-2xl text-lg md:text-xl mb-10 leading-relaxed">
-            Expert Full-Stack & AI Developer, Career Branding Architect, and Digital Solutions Creator building scalable web applications and high-impact platforms.
-        </p>
-        <div class="flex flex-wrap gap-4">
-            <a href="#projects" class="bg-indigo-600 px-7 py-3.5 rounded-xl font-semibold hover:bg-indigo-500 transition shadow-xl shadow-indigo-600/30 flex items-center space-x-2">
-                <span>View Live Projects</span>
-                <span>&rarr;</span>
-            </a>
-            <a href="#contact" class="border border-slate-700 bg-slate-900/50 px-7 py-3.5 rounded-xl font-semibold hover:bg-slate-900 hover:border-slate-600 transition">
-                Contact Hammad
-            </a>
-        </div>
-    </section>
-
-    <!-- Featured Live Projects Section -->
-    <section id="projects" class="max-w-7xl mx-auto px-6 md:px-12 py-20 border-t border-slate-900">
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
-            <div>
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-3">Live Client & Platform Projects</h2>
-                <p class="text-slate-400 max-w-xl">Explore fully functional web applications and platforms engineered with modern tech stacks.</p>
+    <!-- Services Section -->
+    <section id="services" class="max-w-6xl mx-auto px-6 py-20">
+        <h2 class="text-3xl font-bold text-center mb-16">Agency Services</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Service Cards -->
+            <div class="glass p-8 rounded-3xl hover:border-indigo-500 transition">
+                <h3 class="text-xl font-bold mb-4">Tech & AI</h3>
+                <p class="text-slate-400 text-sm">Full-Stack Dev, AI Prompt Engineering, SaaS Development, Mobile Apps.</p>
             </div>
-            <span class="text-xs text-indigo-400 bg-indigo-950/50 px-3 py-1 rounded-md border border-indigo-500/20 mt-4 md:mt-0 w-fit">Interactive Demos</span>
-        </div>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-            <!-- Project 1: Rahbar Mobility -->
-            <div class="bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 rounded-3xl p-8 hover:border-indigo-500/50 transition-all duration-300 flex flex-col justify-between group">
-                <div>
-                    <div class="flex justify-between items-start mb-6">
-                        <span class="bg-cyan-500/10 text-cyan-400 text-xs font-semibold px-3 py-1 rounded-full border border-cyan-500/20">Smart Mobility</span>
-                        <span class="text-slate-500 text-xs">AI Studio Deploy</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-slate-100 group-hover:text-indigo-300 transition mb-3">Rahbar Mobility</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        An advanced smart mobility and routing platform built to optimize transit schedules, destination tracking, and logistics workflow management.
-                    </p>
-                </div>
-                <div>
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="bg-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded-md">Route Optimization</span>
-                        <span class="bg-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded-md">Logistics UI</span>
-                    </div>
-                    <a href="https://rahbar-mobility.ai.studio/" target="_blank" class="w-full bg-slate-800 hover:bg-indigo-600 text-slate-200 hover:text-white text-sm font-semibold py-3 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 shadow-sm">
-                        <span>Launch Live Demo</span>
-                        <span>↗</span>
-                    </a>
-                </div>
+            <div class="glass p-8 rounded-3xl hover:border-indigo-500 transition">
+                <h3 class="text-xl font-bold mb-4">Career Branding</h3>
+                <p class="text-slate-400 text-sm">ATS Resumes, LinkedIn Optimization, SOPs, Cover Letters, Professional Bios.</p>
             </div>
-
-            <!-- Project 2: Zayve Global Marketplace -->
-            <div class="bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 rounded-3xl p-8 hover:border-indigo-500/50 transition-all duration-300 flex flex-col justify-between group">
-                <div>
-                    <div class="flex justify-between items-start mb-6">
-                        <span class="bg-indigo-500/10 text-indigo-400 text-xs font-semibold px-3 py-1 rounded-full border border-indigo-500/20">E-Commerce SaaS</span>
-                        <span class="text-slate-500 text-xs">Global Trade</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-slate-100 group-hover:text-indigo-300 transition mb-3">Zayve Global Marketplace</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        A specialized global Pakistani e-commerce marketplace bridge connecting local vendors, independent businesses, and international buyers seamlessly.
-                    </p>
-                </div>
-                <div>
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="bg-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded-md">Marketplace Engine</span>
-                        <span class="bg-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded-md">Vendor Portal</span>
-                    </div>
-                    <a href="https://zayve-global-pakistani-e-commerce-marketplace.ai.studio/" target="_blank" class="w-full bg-slate-800 hover:bg-indigo-600 text-slate-200 hover:text-white text-sm font-semibold py-3 px-4 rounded-xl transition-all flex items-center justify-center space-x-2 shadow-sm">
-                        <span>Launch Live Demo</span>
-                        <span>↗</span>
-                    </a>
-                </div>
+            <div class="glass p-8 rounded-3xl hover:border-indigo-500 transition">
+                <h3 class="text-xl font-bold mb-4">Business Solutions</h3>
+                <p class="text-slate-400 text-sm">Freelance Profile Setup, Company Profiles, SEO Content, Presentation Design.</p>
             </div>
         </div>
     </section>
 
-    <!-- Professional Services Section -->
-    <section id="services" class="max-w-7xl mx-auto px-6 md:px-12 py-20 border-t border-slate-900">
-        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-3">Career & Business Services</h2>
-        <p class="text-slate-400 max-w-xl mb-12">Professional solutions crafted to guarantee high conversion, strong personal branding, and elite digital execution.</p>
-        
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-20">
+        <h2 class="text-3xl font-bold text-center mb-16">Agency Portfolio</h2>
         <div class="grid md:grid-cols-3 gap-8">
-            <!-- Service 1 -->
-            <div class="bg-slate-900/50 border border-slate-800 p-8 rounded-3xl hover:border-indigo-500/40 transition">
-                <div class="w-12 h-12 bg-indigo-600/10 rounded-2xl flex items-center justify-center text-indigo-400 text-xl font-bold mb-6 border border-indigo-500/20">💻</div>
-                <h3 class="text-xl font-bold text-slate-100 mb-4">Tech & Development</h3>
-                <ul class="space-y-3 text-slate-400 text-sm">
-                    <li class="flex items-center space-x-2"><span class="text-indigo-400">•</span> <span>Full-Stack & AI App Development</span></li>
-                    <li class="flex items-center space-x-2"><span class="text-indigo-400">•</span> <span>Web, Mobile Apps & SaaS Software</span></li>
-                    <li class="flex items-center space-x-2"><span class="text-indigo-400">•</span> <span>AI Automation & Prompt Engineering</span></li>
-                </ul>
+            <!-- Rahbar -->
+            <div class="glass rounded-3xl overflow-hidden hover:scale-105 transition">
+                <div class="p-8">
+                    <h4 class="font-bold text-lg">Rahbar Mobility</h4>
+                    <p class="text-slate-400 text-sm mt-2">Smart route & transport AI platform.</p>
+                </div>
+                <a href="https://rahbar-mobility.ai.studio/" target="_blank" class="block bg-indigo-900/50 text-center py-3 text-sm font-bold uppercase tracking-widest">Live Link</a>
             </div>
-            <!-- Service 2 -->
-            <div class="bg-slate-900/50 border border-slate-800 p-8 rounded-3xl hover:border-indigo-500/40 transition">
-                <div class="w-12 h-12 bg-indigo-600/10 rounded-2xl flex items-center justify-center text-indigo-400 text-xl font-bold mb-6 border border-indigo-500/20">📄</div>
-                <h3 class="text-xl font-bold text-slate-100 mb-4">Career Branding</h3>
-                <ul class="space-y-3 text-slate-400 text-sm">
-                    <li class="flex items-center space-x-2"><span class="text-indigo-400">•</span> <span>ATS-Friendly Resume / CV Design</span></li>
-                    <li class="flex items-center space-x-2"><span class="text-indigo-400">•</span> <span>LinkedIn Profile Optimization</span></li>
-                    <li class="flex items-center space-x-2"><span class="text-indigo-400">•</span> <span>SOP, Cover Letters & Bio Writing</span></li>
-                </ul>
+            <!-- Zayve -->
+            <div class="glass rounded-3xl overflow-hidden hover:scale-105 transition">
+                <div class="p-8">
+                    <h4 class="font-bold text-lg">Zayve Global</h4>
+                    <p class="text-slate-400 text-sm mt-2">Global e-commerce marketplace bridge.</p>
+                </div>
+                <a href="https://zayve-global-pakistani-e-commerce-marketplace.ai.studio/" target="_blank" class="block bg-indigo-900/50 text-center py-3 text-sm font-bold uppercase tracking-widest">Live Link</a>
             </div>
-            <!-- Service 3 -->
-            <div class="bg-slate-900/50 border border-slate-800 p-8 rounded-3xl hover:border-indigo-500/40 transition">
-                <div class="w-12 h-12 bg-indigo-600/10 rounded-2xl flex items-center justify-center text-indigo-400 text-xl font-bold mb-6 border border-indigo-500/20">📈</div>
-                <h3 class="text-xl font-bold text-slate-100 mb-4">Business Solutions</h3>
-                <ul class="space-y-3 text-slate-400 text-sm">
-                    <li class="flex items-center space-x-2"><span class="text-indigo-400">•</span> <span>Freelancer Profiles (Fiverr & Upwork)</span></li>
-                    <li class="flex items-center space-x-2"><span class="text-indigo-400">•</span> <span>Business & Company Profile Design</span></li>
-                    <li class="flex items-center space-x-2"><span class="text-indigo-400">•</span> <span>SEO Content Writing & Presentations</span></li>
-                </ul>
+            <!-- HomeLens -->
+            <div class="glass rounded-3xl overflow-hidden hover:scale-105 transition">
+                <div class="p-8">
+                    <h4 class="font-bold text-lg">HomeLens</h4>
+                    <p class="text-slate-400 text-sm mt-2">AI-Powered Home Remodeling App.</p>
+                </div>
+                <a href="https://homelens-vision-pro.base44.app" target="_blank" class="block bg-indigo-900/50 text-center py-3 text-sm font-bold uppercase tracking-widest">Live Link</a>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="max-w-7xl mx-auto px-6 md:px-12 py-20 border-t border-slate-900">
-        <div class="bg-gradient-to-r from-indigo-950/60 via-slate-900 to-slate-900 border border-indigo-500/30 p-8 md:p-14 rounded-3xl text-center relative overflow-hidden shadow-2xl">
-            <div class="absolute -right-10 -bottom-10 w-60 h-60 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's Build Something Exceptional</h2>
-            <p class="text-slate-400 max-w-xl mx-auto mb-10 text-base">Ready to scale your digital project, launch a tech platform, or optimize your career profile? Reach out directly.</p>
-            <div class="flex flex-wrap justify-center gap-5">
-                <a href="mailto:maharmoon42@gmail.com" class="bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-4 rounded-xl font-semibold transition shadow-lg shadow-indigo-600/30 flex items-center space-x-2">
-                    <span>📧 Email Me</span>
-                </a>
-                <a href="https://wa.me/923274107727" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 rounded-xl font-semibold transition shadow-lg shadow-emerald-600/30 flex items-center space-x-2">
-                    <span>💬 WhatsApp: 03274107727</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="max-w-7xl mx-auto px-6 md:px-12 py-10 border-t border-slate-900 text-slate-500 text-sm flex flex-col md:flex-row justify-between items-center">
-        <p>&copy; 2026 Hammad Allah Bakhsh (HammadTech). All rights reserved.</p>
-        <div class="flex space-x-6 mt-4 md:mt-0 text-xs text-slate-400 font-medium">
-            <span>🛡️ 100% Confidential</span>
-            <span>⚡ Fast Delivery</span>
-            <span>🌍 International Quality</span>
+    <footer id="contact" class="max-w-4xl mx-auto px-6 py-20 text-center border-t border-indigo-900 mt-20">
+        <h2 class="text-4xl font-black mb-8">Work with HammadTech</h2>
+        <div class="flex flex-col md:flex-row justify-center gap-8 text-indigo-400 font-bold text-xl">
+            <p>Hammad Allah Bakhsh</p>
+            <a href="mailto:maharmoon42@gmail.com" class="hover:text-white transition">maharmoon42@gmail.com</a>
+            <a href="https://wa.me/923274107727" class="hover:text-white transition">+92 327 4107727</a>
         </div>
     </footer>
-
 </body>
 </html>
